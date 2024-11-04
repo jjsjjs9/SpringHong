@@ -2,9 +2,12 @@ package com.example.first.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
+
 public class SecondController {
+    @GetMapping("/random-quote")
     public String randomQuote(Model model){
         String[] quotes= {
                 "행복은 습관이다. 그것을 몸에 지니라. " + "-허버드" ,
